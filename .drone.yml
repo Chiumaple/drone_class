@@ -12,10 +12,7 @@ pipeline:
     group: testing
     secrets: 
       -source: test
-       target: man
-       
-      -source: test46
-       target:woman
+       target: test46
     commands:
       - echo "Print var"
       - echo $MAN
