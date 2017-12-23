@@ -15,8 +15,8 @@ pipeline:
        target: test46
     commands:
       - echo "Print var"
-      - echo $MAN
-      - echo $WOMAN
+      - echo $TEST
+      - echo $TEST46
       
 #  test-2:
 #    image: mhart/alpine-node:9.1.0
