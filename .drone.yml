@@ -13,7 +13,7 @@ pipeline:
     secrets: 
       - source: test
         target: man
-      - target: test46
+      - source: test46
         target: woman
     commands:
       - echo "Print var"
