@@ -10,7 +10,7 @@ pipeline:
   test-1:
     image: mhart/alpine-node:9.1.0
     group: testing
-    secrets: 
+    secrets: [test, test46]
       -source: test
        target: man
        
