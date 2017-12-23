@@ -20,5 +20,6 @@ pipeline:
     group: testing
     secrets: [ test46, test ]
     commands:
+      - echo "Print var"
       - echo $TEST
       - echo $TEST46
