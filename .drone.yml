@@ -18,8 +18,7 @@ pipeline:
   test-2:
     image: mhart/alpine-node:9.1.0
     group: testing
-    secrets:
-      secrret:['111','222']
+    secrets: [ test46, test ]
     commands:
       - echo $TEST
       - echo $TEST46
