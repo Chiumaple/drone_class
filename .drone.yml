@@ -11,12 +11,14 @@ pipeline:
     image: mhart/alpine-node:9.1.0
     group: testing
     secrets: 
-      -source: test
-       target: test46
+      - source: test
+        target: man
+      - target: test46
+        target: woman
     commands:
       - echo "Print var"
-      - echo $TEST
-      - echo $TEST46
+      - echo $MAN
+      - echo $WOMAN
       
 #  test-2:
 #    image: mhart/alpine-node:9.1.0
