@@ -14,3 +14,16 @@ pipeline:
       - echo "test other"
       - touch a.txt
       - ls
+      
+  test-2:
+    image: mhart/alpine-node:9.1.0
+    group: testing
+    secrets:
+      - source: test
+        target: test46
+    commands:
+      # - sleep 5
+      # - yarn install
+      - echo $TEST
+      - echo $TEST46
+      # - node redis.js
